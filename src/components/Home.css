@@ -1,0 +1,24 @@
+span:hover
+{
+    color: blueviolet;
+}
+/* Default styles for large screens */
+.large-screen-title {
+    display: block; /* Display "Number of Employees" by default */
+  }
+  
+  .small-screen-title {
+    display: none; /* Hide "NoE" by default */
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    .large-screen-title {
+      display: none; /* Hide "Number of Employees" on small screens */
+    }
+  
+    .small-screen-title {
+      display: block; /* Display "NoE" on small screens */
+    }
+  }
+  
