@@ -88,7 +88,7 @@ const Login = () => {
         console.log(result);
         if (result.data === 'Success') navigate('/');
         else alert('Invalid data');
-      })
+      })  
       .catch((err) => console.error(err));
   };
 
