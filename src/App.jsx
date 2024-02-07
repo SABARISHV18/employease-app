@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path:'https://mathi-tech.vercel.app/login',
+    path:'/login',
     element:<Login />
   },
   {
