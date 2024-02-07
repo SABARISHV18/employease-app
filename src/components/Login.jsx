@@ -80,10 +80,10 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => { 
     e.preventDefault();
     axios
-      .post('https://cloudy-bracelet-boa.cyclic.app/login', { email, password })
+      .post('https://cloudy-bracelet-boa.cyclic.app/loginForm', { email, password })
       .then((result) => {
         console.log(result);
         if (result.data === 'Success') navigate('/');
