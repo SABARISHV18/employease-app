@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import DashBoard from './components/DashBoard';
 import Home from './components/Home';
 import Employee from './components/Employee';
@@ -12,25 +12,34 @@ import Login from './components/Login';
 import AttendanceForm from './components/Attendance';
 import Displaycategory from './components/Displaycategory';
 import AttendanceHistory from './components/AttendanceHistory';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element:<DashBoard />,
+    children:[
+      {path:'',index:true,element:<Home />},
+      {path:'category',element:<Displaycategory />},
+      {path:'cat',element:<Category />},
+      {path:'attendance',element:<AttendanceForm />},
+      {path:'history/:employeeId', element:<AttendanceHistory />},
+      {path:'employee',element:<Employee />},
+      {path:'create',element:<CreateUser/>},
+      {path:'update/:id',element:<Updateuser/>}
+    ],
+  },
+  {
+    path:'/login',
+    element:<Login />
+  },
+  {
+    path:'/register',
+    element:<Signup />
+  }
+])
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-      <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Signup />} />
-       
-        <Route path="/" element={<DashBoard />}>
-          <Route index element={<Home />} />
-          <Route path="/category" element={<Displaycategory />} />
-          <Route path="/cat" element={<Category />} />
-          <Route path="/attendance" element={<AttendanceForm />} />
-          <Route path="/history/:employeeId" element={<AttendanceHistory />} />
-          <Route path="/employee" element={<Employee />} />
-          <Route path="/create" element={<CreateUser />} />
-          <Route path="/update/:id" element={<Updateuser />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   );
 }
 
