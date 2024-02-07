@@ -25,7 +25,7 @@ const Updateuser = () => {
         .then(result=>
             {
                 console.log(result)
-                 navigate('/employee')
+                 navigate('/dashboard/employee')
             })
         .catch(err=>console.log(err))
     }

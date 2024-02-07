@@ -86,7 +86,7 @@ const Login = () => {
       .post('https://cloudy-bracelet-boa.cyclic.app/loginForm', { email, password })
       .then((result) => {
         console.log(result);
-        if (result.data === 'Success') navigate('/');
+        if (result.data === 'Success') navigate('/dashboard');
         else alert('Invalid data');
       })  
       .catch((err) => console.error(err));

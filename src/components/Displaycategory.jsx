@@ -23,7 +23,7 @@ const Displaycategory = () => {
     <div className='row'>
       <div className='d-flex bg-black justify-content-center align-items-center vh-100'>
         <div className='bg-white rounded p-3 col-8 col-sm-5'>
-          <Link to='/cat' className='btn btn-success'>Add projects</Link>
+          <Link to='/dashboard/cat' className='btn btn-success'>Add projects</Link>
           <div className='table-responsive'>
             <table className='table'>
               <thead>

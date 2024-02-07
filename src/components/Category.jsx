@@ -14,7 +14,7 @@ const Category = () => {
       .then((result) => {
         console.log(result);
        
-          navigate('/category')
+          navigate('/dashboard/category')
         
         // Optionally, you can navigate to another page after successful submission
         // navigate('/some-other-route');

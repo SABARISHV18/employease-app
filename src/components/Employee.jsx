@@ -29,7 +29,7 @@ const Employee = () => {
     // <div className='d-flex bg-black justify-content-center align-items-center vh-100'>
     //   <div className='bg-white rounded p-3'>
     <div>
-        <Link to='/create' className='btn btn-success'>Add+</Link>
+        <Link to='/dashboard/create' className='btn btn-success'>Add+</Link>
         {/* <div className='table'> */}
         <div className='table-responsive py-3 w-100'>
           <table className='table'>
@@ -51,7 +51,7 @@ const Employee = () => {
                       <td>{item.age}</td>
                       <td>
 
-                        <Link to={`/update/${item._id}`} className='btn btn-success'>Update</Link>
+                        <Link to={`/dashboard/update/${item._id}`} className='btn btn-success'>Update</Link>
 
                         <button className='btn btn-danger' onClick={(e) => handleDelete(item._id)}>Delete</button></td>
                     </tr>

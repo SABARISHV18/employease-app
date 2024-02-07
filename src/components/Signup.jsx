@@ -14,7 +14,7 @@ const Signup = () => {
     axios.post('https://cloudy-bracelet-boa.cyclic.app/register', { name, email, password })
     .then(result => {
       console.log(result);
-      navigate('/login'); // Ensure this line is within the .then() block
+      navigate('/'); // Ensure this line is within the .then() block
     })
       .catch(err => console.error(err));
   };
@@ -65,7 +65,7 @@ const Signup = () => {
               />
             </div>
 
-            <div className='move mb-3'>Already have an account?<Link to="/login">Login</Link></div>
+            <div className='move mb-3'>Already have an account?<Link to="/">Login</Link></div>
 
             <button type="submit" className="btn btn-primary w-100">
               Sign Up

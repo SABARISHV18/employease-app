@@ -16,6 +16,11 @@ import AttendanceHistory from './components/AttendanceHistory';
 const router = createBrowserRouter([
   {
     path: '/',
+    element:<Login />
+    
+  },
+  {
+    path:'/dashboard',
     element:<DashBoard />,
     children:[
       {path:'',index:true,element:<Home />},
@@ -27,10 +32,6 @@ const router = createBrowserRouter([
       {path:'create',element:<CreateUser/>},
       {path:'update/:id',element:<Updateuser/>}
     ],
-  },
-  {
-    path:'/login',
-    element:<Login />
   },
   {
     path:'/register',

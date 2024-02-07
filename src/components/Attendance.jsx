@@ -94,7 +94,7 @@ const Attendance = () => {
                     <button onClick={(e) => handleMarkAttendance(e, item.name)}>Mark Attendance</button>
                   </td>
                   <td>
-                    <Link to={`/history/${item.name}`}>View History</Link>
+                    <Link to={`/dashboard/history/${item.name}`}>View History</Link>
                   </td>
                 </tr>
               );

@@ -71,25 +71,25 @@ return(
         <hr className="text-white d-none d-sm-block"></hr>
         <ul className="nav nav-tabs nav-pills flex-column mt-2 mt-sm-0" style={{ listStyle: 'none', padding: '0' }}>
           <li className="nav-item my-2 mt-4 py-5 py-sm-0">
-            <Link to="/" className="nav-link text-white text-center text-sm-start">
+            <Link to="/dashboard" className="nav-link text-white text-center text-sm-start">
               <Icon.Speedometer2 color="white" size={30} className="ms-0 ms-sm-1"></Icon.Speedometer2>
               <span className="ms-2 d-none d-sm-inline">Dashboard</span>
             </Link>
           </li>
           <li className="nav-item my-1 mt-0 mt-sm-4 py-2 py-sm-0">
-            <Link to="/employee" className="nav-link text-white text-center text-sm-start">
+            <Link to="/dashboard/employee" className="nav-link text-white text-center text-sm-start">
               <Icon.People color="white" size={30} className="ms-0 ms-sm-1"></Icon.People>
               <span className="ms-2 d-none d-sm-inline">Manage Employee</span>
             </Link>
           </li>
           <li className="nav-item my-1 mt-4 py-2 py-sm-0">
-            <Link to="/category" className="nav-link text-white text-center text-sm-start">
+            <Link to="/dashboard/category" className="nav-link text-white text-center text-sm-start">
               <Icon.Grid color="white" size={30} className="ms-0 ms-sm-1"></Icon.Grid>
               <span className="ms-2 d-none d-sm-inline">Projects</span>
             </Link>
           </li>
           <li className="nav-item my-1 mt-4 py-2 py-sm-0">
-            <Link to="/attendance" className="nav-link text-white text-center text-sm-start">
+            <Link to="/dashboard/attendance" className="nav-link text-white text-center text-sm-start">
               <Icon.FileArrowDownFill color="white" size={30} className="ms-0 ms-sm-1"></Icon.FileArrowDownFill>
               <span className="ms-2 d-none d-sm-inline">Attendance</span>
             </Link>
@@ -107,7 +107,7 @@ return(
                 <a className="dropdown-item" href="#">Profile</a>
                   <hr className="dropdown-divider" />
                 
-                <a className="dropdown-item" href="/login">Sign out</a>
+                <a className="dropdown-item" href="/">Sign out</a>
               </div>
             </div>
     </div>
