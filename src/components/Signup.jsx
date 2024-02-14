@@ -11,7 +11,7 @@ const Signup = () => {
  const navigate=useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://cloudy-bracelet-boa.cyclic.app/register', { name, email, password })
+    axios.post('https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/register', { name, email, password })
     .then(result => {
       console.log(result);
       navigate('/'); // Ensure this line is within the .then() block

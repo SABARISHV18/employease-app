@@ -16,7 +16,7 @@ const Employee = () => {
 
   const handleDelete = (id) => {
     console.log(id);
-    axios.delete('https://cloudy-bracelet-boa.cyclic.app/deleteUser/' + id)
+    axios.delete('https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/deleteUser/' + id)
       .then(res => {
         console.log(res)
         window.location.reload()

@@ -9,7 +9,7 @@ const AttendanceHistory = () => {
 
   useEffect(() => {
     axios
-      .get(`https://cloudy-bracelet-boa.cyclic.app/history/${employeeId}`)
+      .get(`https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/${employeeId}`)
       .then((result) => {
         console.log(result);
         setAttendanceHistory(result.data || []);

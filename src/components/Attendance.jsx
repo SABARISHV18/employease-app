@@ -9,7 +9,7 @@ const Attendance = () => {
   const navigate = useNavigate();
   const [user, SetUser] = useState([])
   useEffect(() => {
-    axios.get("https://cloudy-bracelet-boa.cyclic.app/employee")
+    axios.get("https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/employee")
       .then(result => SetUser(result.data))
       .catch(err => console.log(err))
   }, [])
@@ -18,7 +18,7 @@ const Attendance = () => {
     e.preventDefault();
     console.log(status);
 
-    axios.post('https://cloudy-bracelet-boa.cyclic.app/attendancee', {
+    axios.post('https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/attendancee', {
       employeeId, // Include employeeName in the data
       status
     })

@@ -10,7 +10,7 @@ const Category = () => {
     e.preventDefault();
     console.log(name);
     axios
-      .post("https://cloudy-bracelet-boa.cyclic.app/add", { name })
+      .post("https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/add", { name })
       .then((result) => {
         console.log(result);
        

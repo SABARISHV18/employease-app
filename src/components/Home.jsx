@@ -11,7 +11,7 @@ function Home()
     const [noadminCount, setadminCount] = useState(0);
   
     useEffect(() => {
-        axios.get("https://cloudy-bracelet-boa.cyclic.app/adminCount")
+        axios.get("https://employease-9o6yqkbd3-sabarishs-projects-09ce967f.vercel.app/v1/adminCount")
           .then(result => setadminCount(result.data.count))
           .catch(err => console.log(err))
       }, [])

@@ -9,7 +9,7 @@ const Updateuser = () => {
     const [age,setAge]=useState('');
     const navigate=useNavigate();
     useEffect(()=>{
-        axios.get("https://cloudy-bracelet-boa.cyclic.app/getuser/"+id)
+        axios.get("https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/getuser/"+id)
         .then(result=>{
             console.log(result);
             const { name, email, age } = result.data;
@@ -21,7 +21,7 @@ const Updateuser = () => {
     const Update=(e)=>
     {
         e.preventDefault();
-        axios.put("https://cloudy-bracelet-boa.cyclic.app/update/"+id,{name,email,age: parseInt(age)})
+        axios.put("https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/update/"+id,{name,email,age: parseInt(age)})
         .then(result=>
             {
                 console.log(result)
