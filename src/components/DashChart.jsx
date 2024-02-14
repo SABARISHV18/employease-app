@@ -8,7 +8,7 @@ const DashChart = ({ updateCounts }) => {
   const [count, SetcategoryCount] = useState(0);
   const [count1, SetcategoryCount1] = useState(0);
   useEffect(() => {
-    axios.get("https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/categoryCount",{
+    axios.get("https://employease-3kphon8qa-sabarishs-projects-09ce967f.vercel.app/v1/categoryCount",{
       headers: {
         'Access-Control-Allow-Origin': '*',
       }
