@@ -85,7 +85,6 @@ const Login = () => {
     axios
       .post("https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/loginForm", { email, password })
       .then((result) => {
-        console.log(result);
         if (result.data === 'Success') navigate('/dashboard');
         else alert('Invalid data');
       })  
