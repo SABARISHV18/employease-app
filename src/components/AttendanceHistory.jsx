@@ -9,7 +9,7 @@ const AttendanceHistory = () => {
 
   useEffect(() => {
     axios
-      .get(`https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/${employeeId}`)
+      .get(`https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/history/${employeeId}`)
       .then((result) => {
         console.log(result);
         setAttendanceHistory(result.data || []);

@@ -10,7 +10,7 @@ const CreateUser = () => {
    const Submit=(e)=>
    {
     e.preventDefault();
-    axios.post("https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/create",{name,email,age: parseInt(age)})
+    axios.post("https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/create",{name,email,age: parseInt(age)})
     .then(result=>
         {
             console.log(result)

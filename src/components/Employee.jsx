@@ -7,7 +7,7 @@ const Employee = () => {
   // }])
   const [user, SetUser] = useState([])
   useEffect(() => {
-    axios.get("https://cloudy-bracelet-boa.cyclic.app/employee")
+    axios.get("https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/employee")
       .then(result => SetUser(result.data))
       .catch(err => console.log(err))
   }, [])
@@ -16,7 +16,7 @@ const Employee = () => {
 
   const handleDelete = (id) => {
     console.log(id);
-    axios.delete('https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/deleteUser/' + id)
+    axios.delete('https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/deleteUser/' + id)
       .then(res => {
         console.log(res)
         window.location.reload()

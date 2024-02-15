@@ -83,7 +83,7 @@ const Login = () => {
   const handleSubmit = (e) => { 
     e.preventDefault();
     axios
-      .post("https://employease-9o6yqkbd3-sabarishs-projects-09ce967f.vercel.app/v1/loginForm", { email, password })
+      .post("https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/loginForm", { email, password })
       .then((result) => {
         console.log(result);
         if (result.data === 'Success') navigate('/dashboard');

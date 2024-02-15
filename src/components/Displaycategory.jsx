@@ -5,13 +5,13 @@ const Displaycategory = () => {
   const [user, SetUser] = useState([])
   const [count, SetcategoryCount] = useState(0)
   useEffect(() => {
-    axios.get("https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/getcategory")
+    axios.get("https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/getcategory")
       .then(result => SetUser(result.data))
       .catch(err => console.log(err))
   }, []);
   const Delete = (id) => {
     console.log(id);
-    axios.delete(`https://employease-oacsg1avl-sabarishs-projects-09ce967f.vercel.app/v1/deletecategory/${id}`)
+    axios.delete(`https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/deletecategory/${id}`)
       .then(res => {
         console.log(res)
         window.location.reload()

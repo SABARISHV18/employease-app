@@ -8,7 +8,7 @@ const DashChart = ({ updateCounts }) => {
   const [count, SetcategoryCount] = useState(0);
   const [count1, SetcategoryCount1] = useState(0);
   useEffect(() => {
-    axios.get("https://employease-3kphon8qa-sabarishs-projects-09ce967f.vercel.app/v1/categoryCount",{
+    axios.get("https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/categoryCount",{
       headers: {
         'Access-Control-Allow-Origin': '*',
       }
@@ -17,10 +17,32 @@ const DashChart = ({ updateCounts }) => {
       .catch(err => console.log(err))
   }, [])
   useEffect(() => {
-    axios.get("https://employease-9o6yqkbd3-sabarishs-projects-09ce967f.vercel.app/v1/employeeCount")
+    axios.get("https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/employeeCount")
       .then(result => SetcategoryCount1(result.data.count))
       .catch(err => console.log(err))
   }, [])
+
+  
+
+
+  //  useEffect(() => {
+  //   fetch('https://employease-l7okw15zd-sabarishs-projects-09ce967f.vercel.app/v1/categoryCount', {
+  //     mode: 'no-cors'
+  //   })
+  //     .then(response => {
+  //       if (!response.ok) {
+  //         throw new Error('Network response was not ok');
+  //       }
+  //       return response.json();
+  //     })
+  //     .then(data => {
+  //       console.log('ans',data);
+  //       SetcategoryCount(data.count);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching employee count:', error);
+  //     });
+  // }, []);
 
   useEffect(() => {
     updateCounts(count, count1);
