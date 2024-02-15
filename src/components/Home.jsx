@@ -47,7 +47,7 @@ function Home()
                 </div>
                 <div className="pt-3 px-3 pb-3 border shadow w-100 w-sm-25">
                     <div className="text-center pb-1">
-                          <h4>Number of Categories</h4>
+                          <h4>Number of Projects</h4>
                     </div>
                     <hr />
                     <div className="text-center">

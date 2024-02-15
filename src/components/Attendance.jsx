@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useNavigate,Link} from 'react-router-dom';
 const Attendance = () => {
   const [employeeId, setEmployeeId] = useState('');
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState('present');
   const navigate = useNavigate();
   const [user, SetUser] = useState([])
   useEffect(() => {
@@ -84,9 +84,9 @@ const Attendance = () => {
                 <tr key={index}>
                   <td >{item.name}</td>
                   <td>
-                    <select onChange={(e) => { console.log(e); setStatus(e.target.value); }}>
+                    <select value={status} onChange={(e) => { console.log(e); setStatus(e.target.value); }}>
     
-                      <option selected value="present" style={{backgroundColor:"green"}}>Present</option>
+                      <option value="present" style={{backgroundColor:"green"}}>Present</option>
                       <option value="absent" style={{backgroundColor:"red"}}>Absent</option>
                     </select>
                   </td>

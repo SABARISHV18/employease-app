@@ -102,9 +102,9 @@ return(
                 <span className="d-none d-sm-inline ms-2">Account</span>
               </a>
               <div className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby='dropdownUser1'>
-                <a className="dropdown-item" href="#">New project...</a>
+                {/* <a className="dropdown-item" href="#">New project...</a>
                 <a className="dropdown-item" href="#">Settings</a>
-                <a className="dropdown-item" href="#">Profile</a>
+                <a className="dropdown-item" href="#">Profile</a> */}
                   <hr className="dropdown-divider" />
                 
                 <a className="dropdown-item" href="/">Sign out</a>
