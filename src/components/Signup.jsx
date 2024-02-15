@@ -13,7 +13,6 @@ const Signup = () => {
     e.preventDefault();
     axios.post('https://employease-bynxe9n2a-sabarishs-projects-09ce967f.vercel.app/v1/register', { name, email, password })
     .then(result => {
-      console.log(result);
       navigate('/'); // Ensure this line is within the .then() block
     })
       .catch(err => console.error(err));
